@@ -7,6 +7,8 @@ inputPort HelloService {
   Interfaces: HelloInterface
 }
 
+execution{ concurrent }
+
 main {
   hello (who) (response) {
     response = "Hello, " + who + "!"
